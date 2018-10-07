@@ -1,0 +1,51 @@
+.feedback{
+  text-align: left;
+}
+
+.feedback__title{
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  padding: 20px 0 24px 0;
+  text-align: center;
+  margin: 0;
+}
+
+.feedback__group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+}
+
+.feedback__label{
+  line-height: 26px;
+  font-weight: 400;
+  padding: 11px 14px 11px 20px;
+}
+
+.feedback__answer{
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: none;
+  font-weight: 700;
+  font-family: PT Sans, sans-serif;
+  padding: 18px 20px;
+}
+
+.feedback__input {
+  background-color: #f2f2f2;
+  border: none;
+  margin: 0;
+}
+
+.feedback__answer--textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.feedback__emotions{
+  padding: 0 20px 50px;
+}
