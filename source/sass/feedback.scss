@@ -1,13 +1,13 @@
-.feedback{
+.feedback {
   text-align: left;
 }
 
-.feedback__title{
+.feedback__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-  padding: 20px 0 24px 0;
+  padding: 20px 0 24px;
   text-align: center;
   margin: 0;
 }
@@ -16,16 +16,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 }
 
-.feedback__label{
+.feedback__label {
   line-height: 26px;
   font-weight: 400;
   padding: 11px 14px 11px 20px;
 }
 
-.feedback__answer{
+.feedback__answer {
   font-size: 18px;
   line-height: 26px;
   color: #000000;
@@ -46,6 +46,6 @@
   box-sizing: border-box;
 }
 
-.feedback__emotions{
+.feedback__emotions {
   padding: 0 20px 50px;
 }

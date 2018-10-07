@@ -1,25 +1,25 @@
 @fontface {
   font-weight: normal;
   font-family: "PT Sans";
-  src: url("/fonts/ptsans.woff2") format(woff2), url("/fonts/ptsans.woff") format(woff) ;
+  src: url("/fonts/ptsans.woff2") format(woff2), url("/fonts/ptsans.woff") format(woff);
 }
 @fontface {
   font-weight: bold;
   font-family: "PT Sans";
-  src: url("/fonts/ptsansbold.woff2") format(woff2), url("/fonts/ptsansbold.woff") format(woff) ;
+  src: url("/fonts/ptsansbold.woff2") format(woff2), url("/fonts/ptsansbold.woff") format(woff);
 }
 
 body {
-   text-align: center;
-   width: 320px;
-   background-color: #ffffff;
-   margin: 0 auto;
-   font-size: 14px;
-   line-height: 24px;
-   font-family: "PT Sans", sans-serif;
-   color:#333333;
-   text-transform: uppercase;
-   font-weight: 700;
+  text-align: center;
+  width: 320px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .visually-hidden {
