@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
@@ -14,17 +16,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фото и видео</a>
+            <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
           </li>
           <li class="site-list__item">
-            <a>Форма отзыва</a>
+            <a class="site-list__link">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -39,69 +41,71 @@
     <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
       <div class="feedback__name">
         <h2 class="feedback__title">Представтесь:</h2>
-        <p>
-          <label for="name">Имя<sup>*</sup>:</label>
-          <input class="feedback__input" type="text" id="name" name="name" placeholder="Петр" required>
-        </p>
-        <p>
-          <label for="surname">Фамилия<sup>*</sup>:</label>
-          <input class="feedback-input" type="text" id="surname" name="surname" placeholder="Иванов" required>
-        </p>
-        <p>
-          <label for="father-name">Отчество:</label>
-          <input class="feedback-input" type="text" id="father-name" name="father-name" placeholder="Александрович">
-        </p>
+        <div class="feedback__group">
+          <label class="feedback__label" for="name">Имя<sup>*</sup>:</label>
+          <input class="feedback__answer feedback__input" type="text" id="name" name="name" placeholder="Петр" required>
+        </div>
+        <div class="feedback__group">
+          <label class="feedback__label" for="surname">Фамилия<sup>*</sup>:</label>
+          <input class="feedback__answer feedback__input" type="text" id="surname" name="surname" placeholder="Иванов" required>
+        </div>
+        <div class="feedback__group">
+          <label class="feedback__label" for="father-name">Отчество:</label>
+          <input class="feedback__answer feedback__input" type="text" id="father-name" name="father-name" placeholder="Александрович">
+        </div>
       </div>
       <div class="feedback__info">
         <h2 class="feedback__title">Контактная информация:</h2>
         <p>
-          <label for="phone">Контактный телефон<sup>*</sup>:</label>
-          <input class="feedback-input" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+          <label class="feedback__label" for="phone">Контактный телефон<sup>*</sup>:</label>
+          <input class="feedback__answer feedback__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
         </p>
         <p>
-          <label for="email">Электронная почта<sup>*</sup>:</label>
-          <input class="feedback-input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+          <label class="feedback__label" for="email">Электронная почта<sup>*</sup>:</label>
+          <input class="feedback__answer feedback__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
         </p>
       </div>
       <div class="feedback__impression">
         <h2 class="feedback__title">Ваше общее впечатление:</h2>
         <p>
           <input class="feedback-radio" name="impression" type="radio" value="positive" id="positive" checked>
-          <label for="positive">Скорее положительное</label>
+          <label class="feedback__answer" for="positive">Скорее положительное</label>
         </p>
         <p>
           <input class="feedback-radio" name="impression" type="radio" value="negative" id="negative">
-          <label for="negative">Скорее отрицательное</label>
+          <label class="feedback__answer" for="negative">Скорее отрицательное</label>
         </p>
         <p>
           <input class="feedback-radio" name="impression" type="radio" value="undefined" id="undefined">
-          <label for="undefined">Затрудняюсь ответить</label>
+          <label class="feedback__answer" for="undefined">Затрудняюсь ответить</label>
         </p>
       </div>
       <div class="feedback__places">
         <h2 class="feedback__title">посещенные достопримечательности:</h2>
         <p>
           <input class="feedback-checkbox" type="checkbox" name="bridge" id="bridge" checked>
-          <label class="places-label" for="bridge">Мост Дьявола</label>
+          <label class="feedback__answer" for="bridge">Мост Дьявола</label>
         </p>
         <p>
           <input class="feedback-checkbox" type="checkbox" name="bell" id="bell" checked>
-          <label class="places-label" for="bell">Гора-Колокол</label>
+          <label class="feedback__answer" for="bell">Гора-Колокол</label>
         </p>
         <p>
           <input class="feedback-checkbox" type="checkbox" name="park" id="park" checked>
-          <label class="places-label" for="park">Слайд-парк</label>
+          <label class="feedback__answer" for="park">Слайд-парк</label>
         </p>
         <p>
           <input class="feedback-checkbox" type="checkbox" name="rocks" id="rocks">
-          <label class="places-label" for="rocks">Красные скалы</label>
+          <label class="feedback__answer" for="rocks">Красные скалы</label>
         </p>
       </div>
       <div class="feedback__emotions">
         <h2 class="feedback__title">Опишите свои эмоции:</h2>
-        <textarea class="feedback-textarea" name="emotion" id="emotion" rows="5">Опишите подробно все свои восторги</textarea>
+        <textarea class="feedback__answer feedback__input feedback__answer--textarea" name="emotion" id="emotion" rows="5">Опишите подробно все свои восторги</textarea>
       </div>
-      <button type="submit" class="feedback__button button">Отправить отзыв</button>
+      <div class="button__wrapper">
+        <button type="submit" class="feedback__button button">Отправить отзыв</button>
+      </div>
     </form>
   </main>
   <footer class="page-footer">
@@ -109,19 +113,19 @@
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--twiter" href="https://twiter.com/htmlacademy">Мы в Твитере</a>
+          <a class="social__link social__link--twiter" href="https://twiter.com/htmlacademy"><span class="visually-hidden">Мы в Твитере</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы на Ютубе</a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"><span class="visually-hidden">Мы на Ютубе<span></a>
         </li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <p class="copyright__text">Разработано:</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
     </div>
   </footer>
 </body>
