@@ -13,6 +13,7 @@
     margin-bottom: 25px;
   }
 }
+
 @media (min-width: $tablet-width) {
   .intro {
     min-height: 206px;
@@ -43,6 +44,7 @@
     line-height: 24px;
   }
 }
+
 @media (min-width: $tablet-width) {
   .intro--photo {
     min-height: 248px;
@@ -73,6 +75,7 @@
     line-height: 24px;
   }
 }
+
 @media (min-width: $tablet-width) {
   .intro--video {
     min-height: 248px;
@@ -103,6 +106,7 @@
     line-height: 24px;
   }
 }
+
 @media (min-width: $tablet-width) {
   .intro--form {
     min-height: 248px;

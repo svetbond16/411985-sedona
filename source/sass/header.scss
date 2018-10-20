@@ -7,9 +7,11 @@
   height: 83px;
   margin: 0 auto;
 }
-@media (min-width: $tablet-width) {
-  .header__logo {}
-}
+
+// @media (min-width: $tablet-width) {
+//   .header__logo {}
+// }
+
 @media (min-width: $desktop-width) {
   .page-header__logo {
     height: 96px;

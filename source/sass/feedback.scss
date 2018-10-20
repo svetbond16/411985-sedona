@@ -23,6 +23,9 @@
 .feedback__name {
   .feedback__text {
     margin-left: 14px;
+    width: 100%;
+    background-color: $bg-grey;
+    border: none;
   }
 }
 
@@ -40,14 +43,6 @@
 
   .feedback__text {
     width: auto;
-    background-color: $bg-grey;
-    border: none;
-  }
-}
-
-.feedback__name {
-  .feedback__text {
-    width: 100%;
     background-color: $bg-grey;
     border: none;
   }
@@ -99,6 +94,7 @@
   padding: 0;
   margin: 0 auto 47px;
 }
+
 @media (min-width: $tablet-width) {
   .feedback {
     display: flex;
@@ -151,6 +147,7 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .feedback {
     max-width: 960px;

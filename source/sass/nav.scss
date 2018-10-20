@@ -16,6 +16,7 @@
   line-height: 40px;
   font-size: 18px;
 }
+
 @media (min-width: $tablet-width) {
   .nav__wrapp {
     display: flex;
@@ -30,6 +31,7 @@
     margin: 0 auto;
   }
 }
+
 @media (min-width: $desktop-width) {
   .nav__list {
     justify-content: space-between;
