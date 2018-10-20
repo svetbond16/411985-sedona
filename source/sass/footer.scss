@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 233px;
+  max-width: 280px;
+  margin: 0 auto;
+}
+@media (min-width: $tablet-width) {
+  .footer {
+    min-height: 120px;
+    max-width: 768px;
+
+    .wrapp {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .footer {
+    max-width: 1200px;
+  }
+}

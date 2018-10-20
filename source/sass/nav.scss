@@ -1,0 +1,38 @@
+.nav {
+  background-color: $bg-lightblue;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.nav__list {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.nav__list__link {
+  text-decoration: none;
+  color: $tx-white;
+  line-height: 40px;
+  font-size: 18px;
+}
+@media (min-width: $tablet-width) {
+  .nav__wrapp {
+    display: flex;
+    height: 56px;
+    outline: 2px solid red;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: $desktop-width) {
+  .nav__list {
+    justify-content: space-between;
+    width: 1200px;
+  }
+}
