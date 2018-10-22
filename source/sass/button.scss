@@ -1,24 +1,17 @@
 .button {
-  display: block;
-  box-sizing: border-box;
-  background-color: #81b3d2;
-  color: #ffffff;
+  font-size: 21px;
+  color: $tx-white;
+  background-color: $bg-lightblue;
   text-decoration: none;
-  padding: 16px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 26px;
-  margin: 0 20px;
-  border: none;
-  text-transform: uppercase;
+  line-height: 58px;
+  max-width: 280px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
-.button__wrapper {
-  padding: 0 20px;
-
+@media (min-width: $tablet-width) {
   .button {
-    width: 100%;
-    margin: 0;
+    max-width: 458px;
   }
 }

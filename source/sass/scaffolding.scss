@@ -12,15 +12,46 @@
 
 body {
   text-align: center;
-  width: 320px;
+  min-width: 320px;
   background-color: #ffffff;
   margin: 0 auto;
   font-size: 14px;
   line-height: 24px;
   font-family: "PT Sans", sans-serif;
-  color: #333333;
+  color: $tx-darkgrey;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.h2 {
+  font-size: 21px;
+  line-height: 26px;
+  padding: 0;
+  margin: 0;
+}
+
+.h3 {
+  font-size: 18px;
+  line-height: 26px;
+  color: $tx-black;
+  padding: 0;
+  margin: 0;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  padding: 0;
+  margin: 0;
+}
+
+.number {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  padding: 0;
+  margin: 0 0 20px;
 }
 
 .visually-hidden {

@@ -1,16 +1,30 @@
 .booking {
-  padding: 40px 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 287px;
+  margin: 0 auto;
+
+  .booking-info {
+    max-width: 262px;
+  }
+
+  .text {
+    line-height: 24px;
+    margin-bottom: 37px;
+  }
+
+  .h2 {
+    margin-bottom: 25px;
+  }
 }
 
-.booking__title {
-  padding: 0 20px 25px;
-  margin: 0;
-  font-size: 21px;
-  line-height: 26px;
-}
+@media (min-width: $tablet-width) {
+  .booking {
+    min-height: 318px;
 
-.booking__text {
-  padding: 0 20px 35px;
-  margin: 0;
-  font-weight: 400;
+    .booking-info {
+      max-width: 434px;
+    }
+  }
 }

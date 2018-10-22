@@ -1,18 +1,14 @@
-.social__list {
+.social {
   display: flex;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
 }
 
 .social__item {
-  list-style: none;
-  padding: 3px;
-}
-
-.social__link {
-  display: block;
   width: 46px;
   height: 48px;
-  background-color: #81b3d2;
+  background-color: $bg-lightblue;
+  margin: 38px 6px 35px 0;
+}
+
+.social__item:last-child {
+  margin-right: 0;
 }

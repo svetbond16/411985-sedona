@@ -1,32 +1,75 @@
-.photo__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.photo {
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 .photo__item {
-  padding: 22px 0 0;
+  width: 100%;
+  margin: 22px auto 0;
 }
 
 .photo__info {
-  padding: 17px 0 19px;
   text-align: left;
 }
 
 .photo__title {
-  color: #000000;
-  padding: 0 20px 5px;
-  margin: 0;
+  padding: 0;
+  margin: 14px 0 4px;
 }
 
 .photo__author {
-  text-transform: none;
   font-weight: 400;
-  padding: 0 20px 10px;
-  margin: 0;
+  text-transform: none;
+  padding: 0;
+  margin: 0 0 12px;
 }
 
 .photo__like {
-  padding: 0 20px 0 57px;
+  padding: 0 0 19px 37px;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .photo {
+    max-width: 648px;
+
+    .wrapp {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+
+  .photo__item {
+    width: 50%;
+    margin: 0;
+
+    &:first-of-type {
+      width: 100%;
+    }
+  }
+
+  .photo__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bg-grey;
+    min-height: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo {
+    max-width: 1200px;
+  }
+
+  .photo__item {
+    width: 33.333333%;
+    margin: 0;
+
+    &:first-of-type {
+      width: 100%;
+    }
+  }
 }

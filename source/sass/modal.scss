@@ -1,0 +1,57 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: 1px solid $bg-grey;
+  width: 320px;
+}
+
+.message--error {
+  min-height: 280px;
+
+  .modal__info {
+    max-width: 207px;
+    margin: 44px 0 24px;
+  }
+
+  .h3 {
+    padding-bottom: 31px;
+  }
+
+  .text {
+    line-height: 24px;
+  }
+}
+
+.modal__ok {
+  max-width: 180px;
+  font-size: 18px;
+}
+
+.message--sent {
+  min-height: 323px;
+
+  .wrapp {
+    min-width: 320px;
+  }
+
+  .modal__info {
+    max-width: 214px;
+    margin: 0 auto;
+  }
+}
+
+.modal__close {
+  font-size: 18px;
+  display: block;
+}
+
+.modal--bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 98px;
+  background-color: $bg-grey;
+}
